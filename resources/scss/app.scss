@@ -75,6 +75,35 @@ header {
     }
 }
 
+main {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 3rem 0;
+
+    #comics-list {
+        .comic {
+            .comic-img {
+                width: 100%;
+                aspect-ratio: 1;
+                margin-bottom: 1rem;
+
+                object-fit: cover;
+                object-position: top;
+            }
+
+            .comic-title {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    button {
+        background-color: #0282f9;
+        padding: .5rem 3rem;
+        color: white;
+    }
+}
+
 footer {
     #footer-top {
         background-image: url('../img/footer-bg.jpg');
