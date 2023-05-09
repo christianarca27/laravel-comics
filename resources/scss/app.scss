@@ -1,5 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 header {
     nav {
         height: 120px;
@@ -23,8 +29,6 @@ header {
 
             display: flex;
             gap: 2rem;
-
-            list-style-type: none;
 
             li {
                 height: 100%;
@@ -67,6 +71,83 @@ header {
 
             object-fit: cover;
             object-position: top;
+        }
+    }
+}
+
+footer {
+    #footer-top {
+        background-image: url('../img/footer-bg.jpg');
+        color: #959595;
+
+        #footer-top-inner {
+            height: 450px;
+
+            display: flex;
+
+            ul#footer-links {
+                width: 50%;
+                height: 100%;
+                padding: 2rem 0;
+
+                display: flex;
+                flex-flow: column wrap;
+                gap: 2rem;
+
+                li {
+                    strong {
+                        display: block;
+                        margin-bottom: 1rem;
+
+                        font-size: 1.4rem;
+                        color: white;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            #footer-logo {
+                background-image: url('../img/dc-logo-bg.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 50%;
+                height: 100%;
+            }
+        }
+    }
+
+    #footer-bottom {
+        background-color: #303030;
+
+        #footer-bottom-inner {
+            padding: 2rem 0;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                background-color: #303030;
+                padding: 1rem;
+                border: 1px solid #0282f9;
+
+                color: white;
+            }
+
+            #social-links {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+
+                strong {
+                    color: #0282f9;
+                }
+
+                ul {
+                    display: flex;
+                    gap: 1rem;
+                }
+            }
         }
     }
 }
